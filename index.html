@@ -126,7 +126,7 @@
   <main id="main">
     <!-- HERO -->
     <section class="sn-hero" id="top" aria-labelledby="hero-title">
-      <div class="sn-photo sn-hero__img" role="img" aria-label="Photo de la façade à ajouter"></div>
+      <img class="sn-photo sn-hero__img" src="assets/img/image_001.jpg" alt="Façade de Smash Burger à Béziers" decoding="async">
       <div class="sn-wrap sn-hero__content">
         <p class="sn-eyebrow">Fast food · Place Pierre Semard · Béziers</p>
         <h1 class="sn-hero__title" id="hero-title">Smash Burger</h1>
@@ -171,39 +171,144 @@
         <header class="sn-section__head sn-reveal">
           <p class="sn-eyebrow sn-eyebrow--ink">01 / Carte</p>
           <h2 class="sn-h2" id="carte-title">Nos burgers</h2>
-          <p class="sn-note"><span class="sn-placeholder">[CARTE INDICATIVE : À REMPLACER PAR LA CARTE RÉELLE]</span></p>
         </header>
 
         <div class="sn-tabs" role="tablist" aria-label="Catégories de la carte" data-tablist>
           <button class="sn-tabs__btn" type="button" role="tab" id="tab-burgers" aria-selected="true" aria-controls="panel-burgers" data-panel="burgers">Burgers</button>
-          <button class="sn-tabs__btn" type="button" role="tab" id="tab-extras" aria-selected="false" aria-controls="panel-extras" data-panel="extras" tabindex="-1">Frites &amp; extras</button>
+          <button class="sn-tabs__btn" type="button" role="tab" id="tab-petitefaim" aria-selected="false" aria-controls="panel-petitefaim" data-panel="petitefaim" tabindex="-1">Petite faim</button>
+          <button class="sn-tabs__btn" type="button" role="tab" id="tab-frites" aria-selected="false" aria-controls="panel-frites" data-panel="frites" tabindex="-1">Frites</button>
+          <button class="sn-tabs__btn" type="button" role="tab" id="tab-boissons" aria-selected="false" aria-controls="panel-boissons" data-panel="boissons" tabindex="-1">Desserts &amp; boissons</button>
+          <button class="sn-tabs__btn" type="button" role="tab" id="tab-ubereats" aria-selected="false" aria-controls="panel-ubereats" data-panel="ubereats" tabindex="-1">Uber Eats</button>
         </div>
 
         <div class="sn-panel" id="panel-burgers" role="tabpanel" aria-labelledby="tab-burgers">
           <h3 class="sn-panel__title">Burgers</h3>
           <div class="sn-groups">
             <section class="sn-group">
-              <h4 class="sn-group__title">Burgers smash</h4>
+              <h4 class="sn-group__title">Smash cheese</h4>
               <span class="sn-group__line" aria-hidden="true"></span>
               <ul class="sn-dishes">
-                <li class="sn-dish"><span class="sn-dish__name">Smash burger</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price"><span class="sn-placeholder">[PRIX]</span></span></li>
-                <li class="sn-dish"><span class="sn-dish__name">Double cheese burger</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price"><span class="sn-placeholder">[PRIX]</span></span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Simple (1 steak)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">8,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Double (2 steaks)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">11,40€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Menu (frites + boisson)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">+4€</span></li>
               </ul>
-              <p class="sn-note">Prix et composition à compléter avec la carte réelle.</p>
+              <p class="sn-note">Steak haché smashé, cheddar, oignons crispy, cornichons, sauce maison.</p>
+            </section>
+            <section class="sn-group">
+              <h4 class="sn-group__title">Personnalise ton smash</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Bacon croustillant</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">+1,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Oignons caramélisés</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">+1€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Cheddar</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">+0,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Steak smash supplémentaire</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">+2,50€</span></li>
+              </ul>
+              <p class="sn-note">Sauce au choix : Smash, ketchup, mayonnaise, barbecue, moutarde.</p>
             </section>
           </div>
         </div>
 
-        <div class="sn-panel" id="panel-extras" role="tabpanel" aria-labelledby="tab-extras" hidden>
-          <h3 class="sn-panel__title">Frites &amp; extras</h3>
+        <div class="sn-panel" id="panel-petitefaim" role="tabpanel" aria-labelledby="tab-petitefaim" hidden>
+          <h3 class="sn-panel__title">Petite faim</h3>
           <div class="sn-groups">
             <section class="sn-group">
-              <h4 class="sn-group__title">Frites & extras</h4>
+              <h4 class="sn-group__title">Petite faim</h4>
               <span class="sn-group__line" aria-hidden="true"></span>
               <ul class="sn-dishes">
-                <li class="sn-dish"><span class="sn-dish__name">Frites maison</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price"><span class="sn-placeholder">[PRIX]</span></span></li>
-                <li class="sn-dish"><span class="sn-dish__name">Sauce pickles</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price"><span class="sn-placeholder">[PRIX]</span></span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Hot-dog (seul)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">4,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Hot-dog (menu)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">8,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Tenders (seul)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">5,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Tenders (menu)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">9,90€</span></li>
               </ul>
+              <p class="sn-note">Hot-dog : pain brioché, saucisse, moutarde, ketchup, oignons frits. Tenders : aiguillettes de poulet (6 pièces). Menu = frites + boisson.</p>
+            </section>
+          </div>
+        </div>
+
+        <div class="sn-panel" id="panel-frites" role="tabpanel" aria-labelledby="tab-frites" hidden>
+          <h3 class="sn-panel__title">Frites</h3>
+          <div class="sn-groups">
+            <section class="sn-group">
+              <h4 class="sn-group__title">Frites</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Frites maison</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">4€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Frites cheddar</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">4,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Frites cheddar &amp; bacon</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">5€</span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="sn-panel" id="panel-boissons" role="tabpanel" aria-labelledby="tab-boissons" hidden>
+          <h3 class="sn-panel__title">Desserts &amp;amp; boissons</h3>
+          <div class="sn-groups">
+            <section class="sn-group">
+              <h4 class="sn-group__title">Desserts</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Donuts nature ou chocolat</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">2,50€</span></li>
+              </ul>
+            </section>
+            <section class="sn-group">
+              <h4 class="sn-group__title">Boissons</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Eau</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">1€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">San Pellegrino</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">2€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Coca-Cola</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">2€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Fuze Tea pêche</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">2€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Oasis tropical</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">2€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Red Bull (25cl)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">3€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Bières artisanales</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">3,50€</span></li>
+              </ul>
+              <p class="sn-note">En menu : Red Bull +1€, bière +1,50€.</p>
+            </section>
+          </div>
+        </div>
+
+        <div class="sn-panel" id="panel-ubereats" role="tabpanel" aria-labelledby="tab-ubereats" hidden>
+          <h3 class="sn-panel__title">Uber Eats</h3>
+          <div class="sn-groups">
+            <section class="sn-group">
+              <h4 class="sn-group__title">Menus smash</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Menu smash cheeseburger simple</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">15,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Menu smash cheeseburger double</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">18,40€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Menu chicken cheese burger</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">12,90€</span></li>
+              </ul>
+              <p class="sn-note">Servis avec frites et boisson au choix.</p>
+            </section>
+            <section class="sn-group">
+              <h4 class="sn-group__title">Nos smash</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Smash cheeseburger simple</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">10,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Smash cheeseburger double</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">12,40€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Chicken cheeseburger</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">10,90€</span></li>
+              </ul>
+            </section>
+            <section class="sn-group">
+              <h4 class="sn-group__title">Tenders &amp; hot-dogs</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Menu tenders</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">11,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Tenders (200 g)</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">7,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Hot dog</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">5,90€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Menu hot dog</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">10,90€</span></li>
+              </ul>
+            </section>
+            <section class="sn-group">
+              <h4 class="sn-group__title">Frites &amp; boissons</h4>
+              <span class="sn-group__line" aria-hidden="true"></span>
+              <ul class="sn-dishes">
+                <li class="sn-dish"><span class="sn-dish__name">Frites maison</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">4,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Frites cheddar</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">5€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Frites cheddar et bacon</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">5,50€</span></li>
+                <li class="sn-dish"><span class="sn-dish__name">Red Bull classique</span><span class="sn-dish__leader" aria-hidden="true"></span><span class="sn-dish__price">3€</span></li>
+              </ul>
+              <p class="sn-note">Prix affichés sur Uber Eats.</p>
             </section>
           </div>
         </div>
@@ -214,7 +319,7 @@
     <section class="sn-section sn-signature" id="signature" aria-labelledby="signature-title">
       <div class="sn-wrap sn-signature__grid">
         <figure class="sn-signature__figure sn-reveal">
-          <div class="sn-photo" role="img" aria-label="Photo du burger smash à ajouter"></div>
+          <img class="sn-photo" src="assets/img/image_013.jpg" alt="Burger smash et frites Smash Burger" loading="lazy" decoding="async">
         </figure>
         <div class="sn-signature__body sn-reveal" style="--delay:.1s">
           <p class="sn-eyebrow sn-eyebrow--ink">02 / Le smash</p>
@@ -239,10 +344,10 @@
           <h2 class="sn-h2" id="galerie-title">Un coup d'œil</h2>
         </header>
         <div class="sn-gallery">
-          <div class="sn-gallery__item sn-gallery__item--wide sn-reveal"><div class="sn-photo" role="img" aria-label="Photo de la salle à ajouter"></div></div>
-          <div class="sn-gallery__item sn-reveal"><div class="sn-photo" role="img" aria-label="Photo du burger à ajouter"></div></div>
-          <div class="sn-gallery__item sn-reveal"><div class="sn-photo" role="img" aria-label="Photo des frites à ajouter"></div></div>
-          <div class="sn-gallery__item sn-reveal"><div class="sn-photo" role="img" aria-label="Photo de la façade à ajouter"></div></div>
+          <div class="sn-gallery__item sn-gallery__item--wide sn-reveal"><img class="sn-photo" src="assets/img/image_009.jpg" alt="Salle Smash Burger avec baby-foot et borne d'arcade" loading="lazy" decoding="async"></div>
+          <div class="sn-gallery__item sn-reveal"><img class="sn-photo" src="assets/img/image_002.jpg" alt="Burger et frites Smash Burger" loading="lazy" decoding="async"></div>
+          <div class="sn-gallery__item sn-reveal"><img class="sn-photo" src="assets/img/image_015.jpg" alt="Frites maison Smash Burger" loading="lazy" decoding="async"></div>
+          <div class="sn-gallery__item sn-reveal"><img class="sn-photo" src="assets/img/image_003.jpg" alt="Salle Smash Burger avec arcade" loading="lazy" decoding="async"></div>
         </div>
       </div>
     </section>
@@ -260,15 +365,15 @@
         </div>
         <ul class="sn-reviews" tabindex="0" aria-label="Avis clients, faites défiler horizontalement">
           <li class="sn-review sn-reveal">
-            <p class="sn-review__text">« Very good patties, very tasty sauce, pickles and fitting buns. The homemade fries were great. »</p>
+            <p class="sn-review__text">« Très bons steaks, sauce très savoureuse, cornichons et pains bien adaptés. Les frites maison étaient excellentes. »</p>
             <p class="sn-review__who">Stinky Utah · Il y a 1 an</p>
           </li>
           <li class="sn-review sn-reveal" style="--delay:.08s">
-            <p class="sn-review__text">« Smash burger lovers, this is the place for you! A super friendly welcome with a smile. »</p>
+            <p class="sn-review__text">« Amateurs de smash burgers, c'est l'adresse qu'il vous faut ! Un accueil super sympa et souriant. »</p>
             <p class="sn-review__who">Rémy Bretton · Il y a 1 an</p>
           </li>
           <li class="sn-review sn-reveal" style="--delay:.16s">
-            <p class="sn-review__text">« It's great that they added this fast food to the area. »</p>
+            <p class="sn-review__text">« C'est super qu'ils aient ajouté ce fast-food dans le quartier. »</p>
             <p class="sn-review__who">ValeROUSSE · Il y a 1 an</p>
           </li>
         </ul>
